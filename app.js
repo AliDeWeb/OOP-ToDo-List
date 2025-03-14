@@ -21,11 +21,14 @@ const addTodo = () => {
 
   const todos = todo.getTodo();
 
-  todo.add({ todo: todoInputValue, id: todos.length + 1 });
+  todo.add({ todo: todoInputValue, id: `${todos.length + 1}-${Math.random()}` });
 
   renderPage.render(todos);
 
   localStorageManager.saveToLocalStorage(todos);
+  
+  selectorToDoInput.value = "";
+  selectorToDoInput.focus();
 };
 const clearTodos = () => {
   localStorageManager.deleteLocalStorage();
