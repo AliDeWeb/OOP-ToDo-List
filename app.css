@@ -1,0 +1,21 @@
+@import url("./styles/reset.css");
+
+body {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+li {
+  list-style: circle;
+  margin-left: 3rem;
+}
+
+.actions {
+  margin-bottom: 1rem;
+}
+
+.delete-btn {
+  margin-left: 3rem;
+}
